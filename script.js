@@ -1,12 +1,9 @@
 'use script';
 
-let brandDark = document.querySelector('.brandDark');
-let barIcon = document.querySelector('.barIcon');
-let menuClose = document.querySelector('.menuClose');
+let menuBotton = document.querySelector('.menuBotton');
 
 function toggleMenu() {
     brandDark.classList.toggle('hidden');
 }
 
 barIcon.addEventListener('click', toggleMenu);
-menuClose.addEventListener('click', toggleMenu);
