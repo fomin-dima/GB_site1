@@ -449,3 +449,53 @@ body {
     color: white;
     background-color: #F26376;
 }
+
+.services {
+    background-color: #222224;
+    padding-top: 48px;
+    padding-bottom: 81px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.services .container {
+    display: grid;
+    gap: 46px;
+}
+
+@media (min-width: 1600px) {
+    .services .container {
+        display: grid;
+        gap: 46px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .services {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.serviceUnit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.serviceTitle {
+    font-weight: 400;
+    font-size: 19.96px;
+    color: #FBFBFB;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.serviceText {
+    font-weight: 300;
+    font-size: 13.972px;
+    text-align: center;
+    color: #FBFBFB;
+    max-width: 340px;
+}
