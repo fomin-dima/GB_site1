@@ -210,7 +210,7 @@ body {
     overflow: auto;
 }
 
-.menuUnit a {
+.menuUnitLinks a {
     display: block;
     font-style: normal;
     font-weight: 400;
@@ -221,12 +221,21 @@ body {
     margin-left: 21px;
 }
 
-.menuHeader {
+/* .menuHeader {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 33px;
     color: #F16D7F;
+} */
+
+.menuHeader a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 33px;
+    color: #F16D7F;
+    text-decoration: none;
 }
 
 .menuTitle {
@@ -498,4 +507,200 @@ body {
     text-align: center;
     color: #FBFBFB;
     max-width: 340px;
+}
+
+.subscribe {
+    background: url(img/img_subscribe_back.png) no-repeat;
+    background-size: cover;
+    padding-top: 64px;
+    padding-bottom: 109px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (min-width: 1600px) {
+    .subscribe .container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .subscribe {
+        padding-top: 100px;
+        padding-bottom: 150 px;
+    }
+
+    .subscribeRight {
+        margin-top: initial;
+    }
+}
+
+.subscribeLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.subscribeLeftText {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #222224;
+    max-width: 330px;
+}
+
+.subscribeLeftText mark {
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    background: none;
+    color: #222224;
+}
+
+.subscribeRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.subscribeRightTitle {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribeRightText {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 22px;
+}
+
+.subscribeRightTitle,
+.subscribeRightText {
+    max-width: 271px;
+}
+
+.subscribeRightForm {
+    height: 47px;
+}
+
+.subscribeRight input {
+    height: inherit;
+    background: #E1E1E1;
+    border: none;
+    padding: 6px 21px;
+    box-sizing: border-box;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    float: left;
+    width: 185px;
+
+}
+
+.subscribeRight input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.subscribeRight input ::-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.subscribeRight input :-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.subscribeRight input :-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+
+.subscribeRight button {
+    height: inherit;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #F16D7F;
+    border: none;
+    padding: 0 17px;
+}
+
+.footer {
+    background: #222224;
+    padding: 43px 20px 10px;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .footer .container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 24px 32px;
+    }
+
+}
+
+.footer a {
+    color: #000000;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    background-color: #F16D7F;
+    color: white;
+}
+
+.footer a:not(:last-child) {
+    margin-right: 7px;
+}
+
+.footerLeft {
+    display: flex;
+}
+
+
+.footerRight {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FBFBFB;
+}
+
+@media (max-width: 767px) {
+    .footerRight {
+        margin-top: 40px;
+    }
 }
